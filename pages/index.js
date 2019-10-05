@@ -9,13 +9,8 @@ const whoami = preval`
   module.exports = userInfo.username
 `
 
-const Pre = styled.pre`
-  font-size: 48px;
-  ${tw`bg-pink-400`};
-`
-
-const Bazinga = styled.h1`
-  ${tw`text-6xl text-red-400 font-bold`};
+const H1 = styled.h1`
+  ${tw`text-4xl font-bold tracking-tight`};
 `
 
 // const Paragraph = tw.p`
@@ -27,13 +22,9 @@ export default WhoAmI
 function WhoAmI () {
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }} className="p-4 shadow rounded bg-green-100">
-      <h1>
-        <Pre>whoami: {whoami}</Pre>
-      </h1>
-
-      <Bazinga>
-        Bazinga!!
-      </Bazinga>
+      <H1>
+        <pre>whoami: {whoami}</pre>
+      </H1>
       {/* <Paragraph>Lorem Ipsum dolor set amet</Paragraph> */}
     </div>
   )
